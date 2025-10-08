@@ -1,12 +1,52 @@
-# React + Vite
+**Topics for next project: forms, Fetch API, React**
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### **Project: Weather Dashboard**
 
-Currently, two official plugins are available:
+### **Overview**:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Build a simple weather application where users can input a city name through an HTML form, and the app fetches and displays current weather information using a free weather API.
 
-## Expanding the ESLint configuration
+### **Key Features**:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. **City Search Form**:
+    - A text input field where users can type the name of a city.
+    - A submit button to trigger the API call.
+2. **Weather Display**:
+    - Display current temperature, weather condition (e.g., sunny, cloudy), and other details like humidity and wind speed.
+3. **Dynamic Background**:
+    - Change the background color or image dynamically based on the weather condition (e.g., blue for clear skies, gray for cloudy).
+4. **Error Handling**:
+    - Show a user-friendly error message if the city is not found or if there’s an issue with the API.
+5. **Responsive Design**:
+    - Ensure the app looks good on both desktop and mobile devices.
+
+### **Technologies**:
+
+- **HTML Forms**: For user input.
+- **React**: To build and manage the user interface.
+- **Free API**: Use the [OpenWeatherMap API](https://openweathermap.org/api) for weather data.
+
+### **Steps to Build**:
+
+1. **Set Up the React App**:
+    - Use `create-react-app` or `Vite` to scaffold the project.
+2. **Create the HTML Form**:
+    - Create a form component with a text input field and a submit button.
+3. **Fetch Weather Data**:
+    - Use the OpenWeatherMap API to fetch weather data based on the user’s input.
+    - Store the API key securely in an `.env` file.
+4. **Display Weather Info**:
+    - Create a component to display weather details dynamically.
+5. **Add Error Handling**:
+    - Show error messages when there’s an issue with the input or API.
+6. **Style the App**:
+    - Use CSS or libraries like Tailwind CSS for styling.
+7. **Bonus Features**:
+    - Add a toggle for metric/imperial units.
+    - Use the browser's geolocation API to fetch weather data for the user's current location.
+
+### **Free API Example**:
+
+- **OpenWeatherMap API**:
+    - **Endpoint**: `https://api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key}`
+    - Free tier allows for a good number of API calls per day.
