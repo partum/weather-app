@@ -1,12 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Single:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+
+body{
+  background-color: #91d3e8;
 }
 
 h1{
-  margin-bottom: 0;
+  margin: 0;
+  font-family: "Bitcount Grid Single", system-ui;
 }
 .additional-info p {
   display: inline;
@@ -20,5 +29,6 @@ form{
 button{
   padding: 9px 15px;
   margin-left: 21px;
-  background-color: rgb(105, 105, 170);
+  background-color: #213547;
+  color: white;
 }
