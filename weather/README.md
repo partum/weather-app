@@ -50,3 +50,5 @@ Build a simple weather application where users can input a city name through an 
 - **OpenWeatherMap API**:
     - **Endpoint**: `https://api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key}`
     - Free tier allows for a good number of API calls per day.
+
+Created for: https://roadmap.sh/projects/weather-app
